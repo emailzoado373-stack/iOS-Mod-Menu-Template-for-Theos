@@ -1,10 +1,9 @@
-Package: @@PACKAGENAME@@
-Name: @@APPNAME@@ Mod Menu
+Package: com.seu.respawpurple
+Name: RespawPurple
 Depends: mobilesubstrate
-Version: @@APPVERSION@@
+Version: 0.0.1
 Architecture: iphoneos-arm
-Description: @@APPNAME@@ Mod Menu by @@USER@@!
-Maintainer: @@USER@@
-Author: @@USER@@
+Description: Respaw Purple Menu
+Maintainer: seu nome
+Author: seu nome
 Section: Tweaks
-Homepage: @@SITE@@

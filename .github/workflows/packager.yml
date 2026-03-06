@@ -18,8 +18,9 @@ jobs:
           echo "THEOS=/opt/theos" >> $GITHUB_ENV
 
       - name: Setup SDK
-        run: |
-          git clone https://github.com/theos/sdks.git /opt/theos/sdks
+      run: |
+        sudo rm -rf /opt/theos/sdks
+        git clone https://github.com/theos/sdks.git /opt/theos/sdks
 
       - name: Build Package
         run: |

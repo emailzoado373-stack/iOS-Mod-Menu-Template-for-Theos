@@ -24,10 +24,11 @@ jobs:
 
       - name: Build Package
         run: |
+          cd template
           make package FINALPACKAGE=1
           
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: RespawPurple-Package
-          path: packages/*.deb
+          path: template/packages/*.deb

@@ -1,14 +1,5 @@
-ARCHS = arm64
-DEBUG = 0
-FINALPACKAGE = 1
-FOR_RELEASE = 1
+#import "Menu.h"
+#import <UIKit/UIKit.h>
 
-include $(THEOS)/makefiles/common.mk
-
-TWEAK_NAME = RespawPurple
-
-RespawPurple_FILES = Tweak.xm Menu.mm $(wildcard SCLAlertView/*.m)
-RespawPurple_FRAMEWORKS = UIKit Foundation Security QuartzCore CoreGraphics
-RespawPurple_CFLAGS = -fobjc-arc
-
-include $(THEOS_MAKE_PATH)/tweak.mk
+// ABAIXO DISSO VEM O RESTO DO SEU CÓDIGO (hooks, funções, etc.)
+// Mantenha o seu código original do hack aqui embaixo.

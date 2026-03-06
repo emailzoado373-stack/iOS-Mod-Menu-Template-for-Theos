@@ -11,14 +11,12 @@
     return sharedInstance;
 }
 
-- (void)showPopup:(NSString *)title_description:(NSString *)description_ {
-    // Código para mostrar o alerta na tela
-    NSLog(@"[RespawPurple] Popup: %@ - %@", title_description, description_);
+- (void)showPopup:(NSString *)title description:(NSString *)description {
+    NSLog(@"[RespawPurple] %@: %@", title, description);
 }
 
 - (void)setupMenu {
-    // Código que inicia os botões do seu menu
-    [self showPopup:@"Respaw Purple" :@"Menu Carregado com Sucesso!"];
+    [self showPopup:@"Respaw Purple" description:@"Menu Ativado!"];
 }
 
 @end

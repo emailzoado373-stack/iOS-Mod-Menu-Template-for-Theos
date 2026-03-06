@@ -15,6 +15,7 @@ jobs:
         run: |
           sudo git clone --recursive https://github.com/theos/theos.git /opt/theos
           sudo chown -R $USER /opt/theos
+          brew install ldid
           echo "THEOS=/opt/theos" >> $GITHUB_ENV
 
       - name: Setup SDK

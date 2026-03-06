@@ -9,7 +9,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Theos
         run: |
@@ -18,9 +18,9 @@ jobs:
           echo "THEOS=/opt/theos" >> $GITHUB_ENV
 
       - name: Setup SDK
-      run: |
-        sudo rm -rf /opt/theos/sdks
-        git clone https://github.com/theos/sdks.git /opt/theos/sdks
+        run: |
+          sudo rm -rf /opt/theos/sdks
+          git clone https://github.com/theos/sdks.git /opt/theos/sdks
 
       - name: Build Package
         run: |
